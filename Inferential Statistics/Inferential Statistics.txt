@@ -1,0 +1,43 @@
+House Price in Different Counties
+
+Four counties in San Francisco Bay Areas have been included in the dataset. They are San Mateo County, Santa clara County, Alameda County and San Francisco County. First we will explore whether the average house prices of the four counties are the same.
+
+Null hypothesis: The average house prices of the four counties are the same.
+Alternate hypothesis: The average house prices of the four counties are not the same.
+Alpha = 0.01
+
+The one-way ANOVA tests the null hypothesis that two or more groups have the same population mean. The test is applied to samples from two or more groups, possibly with differing sizes. The result is 0.0. The test result suggests the counties don't have the same sample means in this case, since the p-value is significant at a 99% confidence level. 
+
+Post-hoc test is to perform separate tests for each pair of groups. Only San mateo County and San Francisco County may share the same house price since the p value is 0.15597 which is greater than 0.01.
+
+
+
+Property Type & Price per Square Footage
+
+We have three different property types in our dataset. They are single family house, townhouse and condo. The following we will test whether the three property types have the same unit price.
+
+Null hypothesis: The average house prices of the four counties are the same.
+Alternate hypothesis: The average house prices of the four counties are not the same.
+Alpha = 0.01
+
+The result is less than 0.01. The test result suggests we are able to reject the null hypothesis that the population means are all equal, based on the significance level is 99%.  
+
+However, in the post-hoc test for each pair of groups, condo to townhouse, condo to single family house, townhouse to single family house, all the pvalues are smaller than 0.01 which means the three property types in San Francisco Bay Areas have different unit prices.
+
+
+Single Family House: Number of Bedrooms & House Price
+
+In this section, we use pearson to calculate correlatio between number of bedrooms and single family house price. The result is 0.36, it means there is a weak positive relationship between them.
+
+
+Single Family House: Lot size & House Price
+
+In this section, we use pearson to calculate correlatio between lot size and single family house price. The result is 0.29, it means there is a weak positive relationship between them.
+
+
+I also analyzed correlationship between every other factor with property price based on different property type. 
+
+According to the heap map, for all types of properties, square feet number of bedrooms and number of bathrooms have at lease weak positive effect on the price. Since dollar per square feet is the result of price and square feet, we didn't count this one.
+
+For single family house, according to the heap map, lot size has a weak to moderate positive effect on the price. Since dollar per square feet is the result of price and square feet, we didn't count this one.
+
